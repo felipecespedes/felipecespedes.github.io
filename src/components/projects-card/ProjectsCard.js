@@ -38,8 +38,8 @@ class ProjectsCard extends React.Component {
             These are some of my projects. You can find these and more on my <a href="https://github.com/felipecespedes" target="_blank" rel="noopener noreferrer">Github Profile</a>.
           </p>
           <ul className={`${this.COMPONENT_CLASS}__projects`}>
-            {this.PROJECTS.map(project =>
-              <li className={`${this.COMPONENT_CLASS}__project`}>
+            {this.PROJECTS.map((project, i) =>
+              <li className={`${this.COMPONENT_CLASS}__project`} key={i}>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
               </li>
             )}

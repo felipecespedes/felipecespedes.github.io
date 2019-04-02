@@ -27,8 +27,8 @@ class LinksCard extends React.Component {
         </header>
         <article className={`${this.COMPONENT_CLASS}__content`}>
           <ul className={`${this.COMPONENT_CLASS}__sites`}>
-            {this.SITES.map(site =>
-              <li className={`${this.COMPONENT_CLASS}__site`}>
+            {this.SITES.map((site, i) =>
+              <li className={`${this.COMPONENT_CLASS}__site`} key={i}>
                 <a href={site.url} target="_blank" rel="noopener noreferrer">{site.name}</a>
               </li>
             )}
