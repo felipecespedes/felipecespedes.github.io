@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <div className="app" data-testid="app">
         <ContactCard />
-        <LinksCard />
         <ProjectsCard />
+        <LinksCard />
       </div>
     );
   }
