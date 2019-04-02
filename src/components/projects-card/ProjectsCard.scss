@@ -1,0 +1,18 @@
+.projects-card {
+  &__title {
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  &__content {
+    padding: 20px 30px 10px;
+  }
+
+  &__info {
+    margin: 0 0 20px;
+  }
+
+  &__project {
+    margin: 0 0 5px;
+  }
+}
