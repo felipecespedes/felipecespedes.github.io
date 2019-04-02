@@ -21,7 +21,7 @@ class LinksCard extends React.Component {
 
   render() {
     return (
-      <section className={`${this.COMPONENT_CLASS} card`}>
+      <section className={`${this.COMPONENT_CLASS} card`} data-testid="links-card">
         <header className={`${this.COMPONENT_CLASS}__header`}>
           <h1 className={`${this.COMPONENT_CLASS}__title`}>Links</h1>
         </header>

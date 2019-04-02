@@ -7,7 +7,7 @@ import ProjectsCard from './components/projects-card/ProjectsCard';
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div className="app" data-testid="app">
         <ContactCard />
         <LinksCard />
         <ProjectsCard />

@@ -29,7 +29,7 @@ class ProjectsCard extends React.Component {
 
   render() {
     return (
-      <section className={`${this.COMPONENT_CLASS} card`}>
+      <section className={`${this.COMPONENT_CLASS} card`} data-testid="projects-card">
         <header className={`${this.COMPONENT_CLASS}__header`}>
           <h1 className={`${this.COMPONENT_CLASS}__title`}>Projects</h1>
         </header>

@@ -7,7 +7,7 @@ class ContactCard extends React.Component {
 
   render() {
     return (
-      <section className={`${this.COMPONENT_CLASS} card`}>
+      <section className={`${this.COMPONENT_CLASS} card`} data-testid="contact-card">
         <header className={`${this.COMPONENT_CLASS}__header`}>
           <h1 className={`${this.COMPONENT_CLASS}__title`}>Felipe Céspedes</h1>
           <img src="avatar.png" alt="avatar" className={`${this.COMPONENT_CLASS}__avatar`}></img>
