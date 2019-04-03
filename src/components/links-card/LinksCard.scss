@@ -8,7 +8,18 @@
     padding: 20px 30px 10px;
   }
 
+  &_sites {
+    list-style: none;
+  }
+
   &__site {
     margin: 0 0 5px;
+    display: flex;
+    align-content: center;
+  }
+
+  &__icon {
+    height: 25px;
+    margin: 0 10px 0 0;
   }
 }

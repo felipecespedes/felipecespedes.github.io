@@ -7,23 +7,28 @@ class ProjectsCard extends React.Component {
   PROJECTS = [
     {
       name: 'Viwell Framework',
-      url: 'https://github.com/felipecespedes/viwell-framework'
+      url: 'https://github.com/felipecespedes/viwell-framework',
+      icon: '/img/github.svg'
     },
     {
       name: 'Your Own MVC Framework',
-      url: 'https://github.com/felipecespedes/your-own-mvc-framework'
+      url: 'https://github.com/felipecespedes/your-own-mvc-framework',
+      icon: '/img/github.svg'
     },
     {
       name: 'ng-letter-avatar',
-      url: 'https://github.com/felipecespedes/ng-letter-avatar'
+      url: 'https://github.com/felipecespedes/ng-letter-avatar',
+      icon: '/img/github.svg'
     },
     {
       name: 'ng-elastic-input',
-      url: 'https://github.com/felipecespedes/ng-elastic-input'
+      url: 'https://github.com/felipecespedes/ng-elastic-input',
+      icon: '/img/github.svg'
     },
     {
       name: 'gpio-omega2',
-      url: 'https://github.com/felipecespedes/gpio-omega2'
+      url: 'https://github.com/felipecespedes/gpio-omega2',
+      icon: '/img/github.svg'
     }
   ];
 
@@ -40,6 +45,7 @@ class ProjectsCard extends React.Component {
           <ul className={`${this.COMPONENT_CLASS}__projects`}>
             {this.PROJECTS.map((project, i) =>
               <li className={`${this.COMPONENT_CLASS}__project`} key={i}>
+                <img className={`${this.COMPONENT_CLASS}__icon`} src={project.icon} alt="icon" />
                 <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
               </li>
             )}

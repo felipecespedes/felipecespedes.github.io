@@ -7,15 +7,18 @@ class LinksCard extends React.Component {
   SITES = [
     {
       name: 'Github Profile',
-      url: 'https://github.com/felipecespedes'
+      url: 'https://github.com/felipecespedes',
+      icon: '/img/github.svg'
     },
     {
       name: 'NPM Packages',
-      url: 'https://www.npmjs.com/~viwell'
+      url: 'https://www.npmjs.com/~viwell',
+      icon: '/img/npm.svg'
     },
     {
       name: 'Youtube Channel',
-      url: 'https://www.youtube.com/codigea'
+      url: 'https://www.youtube.com/codigea',
+      icon: '/img/youtube.svg'
     }
   ];
 
@@ -29,6 +32,7 @@ class LinksCard extends React.Component {
           <ul className={`${this.COMPONENT_CLASS}__sites`}>
             {this.SITES.map((site, i) =>
               <li className={`${this.COMPONENT_CLASS}__site`} key={i}>
+                <img className={`${this.COMPONENT_CLASS}__icon`} src={site.icon} alt="icon" />
                 <a href={site.url} target="_blank" rel="noopener noreferrer">{site.name}</a>
               </li>
             )}

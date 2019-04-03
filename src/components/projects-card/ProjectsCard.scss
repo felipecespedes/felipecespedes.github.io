@@ -14,9 +14,17 @@
 
   &__projects {
     padding: 0 30px;
+    list-style: none;
   }
 
   &__project {
     margin: 0 0 5px;
+    display: flex;
+    align-content: center;
+  }
+
+  &__icon {
+    height: 25px;
+    margin: 0 10px 0 0;
   }
 }
