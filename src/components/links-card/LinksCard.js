@@ -1,5 +1,7 @@
 import React from 'react';
 import './LinksCard.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faNpm, faYoutube } from  '@fortawesome/free-brands-svg-icons';
 
 class LinksCard extends React.Component {
 
@@ -8,17 +10,17 @@ class LinksCard extends React.Component {
     {
       name: 'Github Profile',
       url: 'https://github.com/felipecespedes',
-      icon: '/img/github.svg'
+      icon: faGithub
     },
     {
       name: 'NPM Packages',
       url: 'https://www.npmjs.com/~viwell',
-      icon: '/img/npm.svg'
+      icon: faNpm
     },
     {
       name: 'Youtube Channel',
       url: 'https://www.youtube.com/codigea',
-      icon: '/img/youtube.svg'
+      icon: faYoutube
     }
   ];
 
@@ -26,13 +28,13 @@ class LinksCard extends React.Component {
     return (
       <section className={`${this.COMPONENT_CLASS} card`} data-testid="links-card">
         <header className={`${this.COMPONENT_CLASS}__header`}>
-          <h1 className={`${this.COMPONENT_CLASS}__title`}>Links</h1>
+          <h2 className={`${this.COMPONENT_CLASS}__title`}>Links</h2>
         </header>
         <article className={`${this.COMPONENT_CLASS}__content`}>
           <ul className={`${this.COMPONENT_CLASS}__sites`}>
             {this.SITES.map((site, i) =>
               <li className={`${this.COMPONENT_CLASS}__site`} key={i}>
-                <img className={`${this.COMPONENT_CLASS}__icon`} src={site.icon} alt="icon" />
+                <FontAwesomeIcon className={`${this.COMPONENT_CLASS}__icon`} icon={site.icon} />
                 <a href={site.url} target="_blank" rel="noopener noreferrer">{site.name}</a>
               </li>
             )}

@@ -1,5 +1,7 @@
 import React from 'react';
 import './ProjectsCard.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from  '@fortawesome/free-brands-svg-icons';
 
 class ProjectsCard extends React.Component {
 
@@ -8,27 +10,27 @@ class ProjectsCard extends React.Component {
     {
       name: 'Viwell Framework',
       url: 'https://github.com/felipecespedes/viwell-framework',
-      icon: '/img/github.svg'
+      icon: faGithub
     },
     {
       name: 'Your Own MVC Framework',
       url: 'https://github.com/felipecespedes/your-own-mvc-framework',
-      icon: '/img/github.svg'
+      icon: faGithub
     },
     {
       name: 'ng-letter-avatar',
       url: 'https://github.com/felipecespedes/ng-letter-avatar',
-      icon: '/img/github.svg'
+      icon: faGithub
     },
     {
       name: 'ng-elastic-input',
       url: 'https://github.com/felipecespedes/ng-elastic-input',
-      icon: '/img/github.svg'
+      icon: faGithub
     },
     {
       name: 'gpio-omega2',
       url: 'https://github.com/felipecespedes/gpio-omega2',
-      icon: '/img/github.svg'
+      icon: faGithub
     }
   ];
 
@@ -36,7 +38,7 @@ class ProjectsCard extends React.Component {
     return (
       <section className={`${this.COMPONENT_CLASS} card`} data-testid="projects-card">
         <header className={`${this.COMPONENT_CLASS}__header`}>
-          <h1 className={`${this.COMPONENT_CLASS}__title`}>Projects</h1>
+          <h2 className={`${this.COMPONENT_CLASS}__title`}>Projects</h2>
         </header>
         <article className={`${this.COMPONENT_CLASS}__content`}>
           <p className={`${this.COMPONENT_CLASS}__info`}>
@@ -45,7 +47,7 @@ class ProjectsCard extends React.Component {
           <ul className={`${this.COMPONENT_CLASS}__projects`}>
             {this.PROJECTS.map((project, i) =>
               <li className={`${this.COMPONENT_CLASS}__project`} key={i}>
-                <img className={`${this.COMPONENT_CLASS}__icon`} src={project.icon} alt="icon" />
+                <FontAwesomeIcon className={`${this.COMPONENT_CLASS}__icon`} icon={project.icon} />
                 <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
               </li>
             )}

@@ -22,8 +22,13 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
+h1,
+h2 {
   color: $tertiary;
+}
+
+h2 {
+  font-size: 1.2em;
 }
 
 a {
