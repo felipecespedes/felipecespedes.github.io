@@ -1,14 +1,22 @@
 .card {
+  color: $tertiary;
   background-color: $secondary;
   width: 100%;
   max-width: 600px;
   margin: 0 auto 20px;
-  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1),
-              inset 0 3px 3px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1),
+              inset 0 3px 3px rgba(0, 0, 0, 0.05);
   padding: 10px 20px;
   border-radius: 5px;
 
   &:last-child {
     margin: 0 auto;
   }
+}
+
+.theme-dark .card {
+  color: $tertiary-dark;
+  background-color: $secondary-dark;
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1),
+              inset 0 3px 3px rgba(255, 255, 255, 0.05);
 }

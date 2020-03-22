@@ -1,3 +1,11 @@
+@import "./styles/main";
+
 .app {
   padding: 30px;
+  background-color: $primary;
+  min-height: 100vh;
+
+  &.theme-dark {
+    background-color: $primary-dark;
+  }
 }

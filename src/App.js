@@ -4,15 +4,20 @@ import ContactCard from './components/contact-card/ContactCard';
 import LinksCard from './components/links-card/LinksCard';
 import ProjectsCard from './components/projects-card/ProjectsCard';
 import ReactGA from 'react-ga';
+import { AppConsumer } from './providers/AppContext';
 
 class App extends Component {
   render() {
     return (
-      <div className="app" data-testid="app">
-        <ContactCard />
-        <ProjectsCard />
-        <LinksCard />
-      </div>
+      <AppConsumer>
+        { ({ theme }) => (
+          <div className={`app theme-${theme}`} data-testid="app">
+            <ContactCard theme={theme} />
+            <ProjectsCard theme={theme} />
+            <LinksCard theme={theme} />
+          </div>
+        ) }
+      </AppConsumer>
     );
   }
 
