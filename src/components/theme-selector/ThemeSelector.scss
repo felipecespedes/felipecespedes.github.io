@@ -1,0 +1,36 @@
+@import '../../styles/main.scss';
+
+.theme-selector {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &__toggle-button {
+    background-color: $secondary-dark;
+    border: none;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    outline-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    transition: background-color $transition-time linear;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+}
+
+.theme-dark .theme-selector {
+
+  &__toggle-button {
+    background-color: $secondary;
+  }
+
+}

@@ -4,6 +4,7 @@
   padding: 30px;
   background-color: $primary;
   min-height: 100vh;
+  transition: background-color $transition-time linear;
 
   &.theme-dark {
     background-color: $primary-dark;

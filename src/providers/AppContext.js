@@ -22,7 +22,8 @@ export class AppProvider extends React.Component {
     return (
       <AppContext.Provider
         value={{
-          theme
+          theme,
+          onThemeChanged: this.handleThemeChanged
         }}
       >
         { children }
@@ -30,8 +31,12 @@ export class AppProvider extends React.Component {
     );
   }
 
+  handleThemeChanged = (theme) => {
+    this.setState({ theme });
+  }
+
   initializeTheme() {
-    this.setState({ theme: 'light' });
+    this.setState({ theme: 'dark' });
   }
 
 }

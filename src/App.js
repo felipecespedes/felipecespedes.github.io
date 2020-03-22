@@ -5,6 +5,7 @@ import LinksCard from './components/links-card/LinksCard';
 import ProjectsCard from './components/projects-card/ProjectsCard';
 import ReactGA from 'react-ga';
 import { AppConsumer } from './providers/AppContext';
+import ThemeSelector from './components/theme-selector/ThemeSelector';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
             <ContactCard theme={theme} />
             <ProjectsCard theme={theme} />
             <LinksCard theme={theme} />
+            <ThemeSelector />
           </div>
         ) }
       </AppConsumer>
