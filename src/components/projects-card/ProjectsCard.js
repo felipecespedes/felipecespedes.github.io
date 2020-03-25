@@ -18,6 +18,11 @@ class ProjectsCard extends React.Component {
       icon: faGithub
     },
     {
+      name: 'react-neumorphic-elements',
+      url: 'https://github.com/felipecespedes/react-neumorphic-elements',
+      icon: faGithub
+    },
+    {
       name: 'ng-letter-avatar',
       url: 'https://github.com/felipecespedes/ng-letter-avatar',
       icon: faGithub
