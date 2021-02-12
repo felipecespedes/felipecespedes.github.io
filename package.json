@@ -1,6 +1,6 @@
 {
   "name": "felipecespedes.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Felipe Céspedes Web Page",
   "private": true,
   "repository": {
@@ -9,7 +9,7 @@
   },
   "author": {
     "name": "Felipe Céspedes",
-    "email": "felipecespedespisso@gmail.com"
+    "url": "https://felipecespedes.github.io"
   },
   "bugs": {
     "url": "https://github.com/felipecespedes/felipecespedes.github.io/issues"

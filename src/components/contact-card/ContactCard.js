@@ -16,7 +16,7 @@ class ContactCard extends React.Component {
             Senior full-stack developer working mostly with web related technologies and open-source software.
           </p>
           <p className={`${this.COMPONENT_CLASS}__contact`}>
-            You can reach me on <a href="https://www.linkedin.com/in/andres-felipe-cespedes/" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="mailto:felipecespedespisso@gmail.com">Gmail</a>.
+            You can reach me on <a href="https://www.linkedin.com/in/andres-felipe-cespedes/" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="https://twitter.com/felipecespedesp" target="_blank" rel="noopener noreferrer">Twitter</a>.
           </p>
         </article>
       </section>
